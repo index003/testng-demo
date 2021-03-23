@@ -26,7 +26,8 @@ public class DataLnLoginTest1 {
         DataLn.newClick(ObjectStore.LOGIN_XPATH);
         DataLn.sendKey(ObjectStore.USERNAME_XPATH, DataStore.D_Username);
         DataLn.sendKey(ObjectStore.PASSWORD_XPATH,DataStore.D_Password);
-        DataLn.sendKey(ObjectStore.PASSWORD_XPATH,DataStore.D_Enter);
+        DataLn.submitEnter(ObjectStore.PASSWORD_XPATH);
+        //DataLn.sendKey(ObjectStore.PASSWORD_XPATH,DataStore.D_Enter);
         Thread.sleep(5000);
     }
 }

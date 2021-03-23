@@ -1,6 +1,7 @@
 package com.autoframe.lib;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -90,5 +91,9 @@ public class WebDriverLib {
 
     public void sendKey(String p_id,String keys){
         webDriver.findElement(parseObject(p_id)).sendKeys(keys);
+    }
+
+    public void submitEnter(String p_id) {
+        webDriver.findElement(parseObject(p_id)).sendKeys(Keys.ENTER);
     }
 }
